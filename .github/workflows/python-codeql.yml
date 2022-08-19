@@ -1,0 +1,26 @@
+name: "[Application - SAST] Python CodeQL"
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ main, master ]
+    paths: ["**.py"]
+permissions:
+  actions: read
+  checks: read
+  contents: none
+  deployments: none
+  issues: none
+  packages: none
+  pull-requests: write
+  repository-projects: none
+  security-events: none
+  statuses: none
+
+jobs:
+  tfsec_pr_feedback:
+    uses: ministryofjustice/opg-github-workflows/.github/workflows/analysis-application-codeql-sast-to-github-security.yml@v1.6.0
+    with:
+      application_languages: '["python"]'
+    secrets:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
