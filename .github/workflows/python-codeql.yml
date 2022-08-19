@@ -8,7 +8,7 @@ on:
 permissions:
   contents: read
   security-events: write
-
+  pull-requests: read
 
 jobs:
   tfsec_pr_feedback:
