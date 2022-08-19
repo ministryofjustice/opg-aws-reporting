@@ -6,16 +6,9 @@ on:
     branches: [ main, master ]
     paths: ["**.py"]
 permissions:
-  actions: read
-  checks: read
-  contents: none
-  deployments: none
-  issues: none
-  packages: none
-  pull-requests: write
-  repository-projects: none
-  security-events: none
-  statuses: none
+  contents: read
+  security-events: write
+
 
 jobs:
   tfsec_pr_feedback:
