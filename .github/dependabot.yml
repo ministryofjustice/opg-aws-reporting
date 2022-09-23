@@ -1,9 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: 'pip'
+  - package-ecosystem: 'gomod'
     pull-request-branch-name:
       separator: "-"  
-    directory: './app'
+    directory: './apps/untagged'
     schedule:
       interval: 'daily'
   - package-ecosystem: 'github-actions'
