@@ -1,0 +1,26 @@
+?   	untagged	[no test files]
+=== RUN   TestAWS
+[iam]
+- structName: [Iam]
+- structRegistered: [true]
+{
+
+}--- PASS: TestAWS (0.49s)
+PASS
+ok  	untagged/pkg/aws	0.744s
+?   	untagged/pkg/aws/availableservices	[no test files]
+?   	untagged/pkg/aws/endpoint	[no test files]
+=== RUN   TestRegionsInPartition
+--- PASS: TestRegionsInPartition (0.00s)
+PASS
+ok  	untagged/pkg/aws/region	(cached)
+=== RUN   TestConvertToStructName
+--- PASS: TestConvertToStructName (0.00s)
+=== RUN   TestServicesInPartition
+--- PASS: TestServicesInPartition (0.00s)
+PASS
+ok  	untagged/pkg/aws/service	(cached)
+=== RUN   TestRegisterType
+--- PASS: TestRegisterType (0.00s)
+PASS
+ok  	untagged/pkg/aws/serviceregistry	(cached)
